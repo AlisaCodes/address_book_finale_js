@@ -25,6 +25,8 @@ function resetFields() {
   $("input.new-street").val("");
   $("input.new-city").val("");
   $("input.new-state").val("");
+  $("input.new-address-type").val("");
+  $("div.new-address").not(':first').remove();
 }
 
 
