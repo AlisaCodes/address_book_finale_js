@@ -11,3 +11,15 @@ describe('Contact', function() {
     expect(testContact.fullName()).to.equal("Pablo Picasso");
   });
 });
+
+
+describe("Address", function() {
+  it("creates a new address with the given specifications", function() {
+    var testAddress = new Address("443 Pinewood Terrace", "Arlington", "VA");
+    expect(testAddress.street).to.equal("443 Pinewood Terrace");
+    expect(testAddress.city).to.equal("Arlington");
+    expect(testAddress.state).to.equal("VA");
+  });
+
+
+});
