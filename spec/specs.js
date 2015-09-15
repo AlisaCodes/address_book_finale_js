@@ -21,5 +21,8 @@ describe("Address", function() {
     expect(testAddress.state).to.equal("VA");
   });
 
-
+  it("adds the fullAddress method to all the addresses", function() {
+    var testAddress = new Address("4043 Camero Ave", "Los Angeles", "Ca");
+    expect(testAddress.fullAddress()).to.equal("4043 Camero Ave, Los Angeles, Ca")
+  });
 });
